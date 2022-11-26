@@ -5,7 +5,9 @@ function App() {
   return (
     <div>
       <Card cardColor="red" />
-      <Card cardColor="blue" />
+      {/* With props value */}
+      <Card />
+      {/* Without prop values we can use the default props to set default values */}
       <Card cardColor="green" />
     </div>
   );
