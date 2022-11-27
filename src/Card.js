@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Card(props) {
   // console.log(props.cardColor);
@@ -15,6 +16,17 @@ function Card(props) {
   return <div style={styles}></div>;
 }
 
+// This is just a dev tool so we will not get the errors after react build
+
+// React Docs on PropTypes:
+// https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
+
+Card.propTypes = {
+  cardColor: PropTypes.string.isRequired,
+  // cardColor: PropTypes.oneOf(["red", "blue"]) to make it taken from the given options
+  height: PropTypes.number,
+  width: PropTypes.number.isRequired
+}
 
 Card.defaultProps = {
   cardColor: "blue",
