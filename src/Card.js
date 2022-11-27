@@ -5,8 +5,11 @@ function Card(props) {
   // this is to console the values of props recieved from the user
   const styles = {
     backgroundColor: props.cardColor,
-    height: 100,
-    width: 100,
+    // height: 100,
+    // width: 100,
+    // making the width and height with Dynamic props
+    height: props.height,
+    width: props.width
   };
 
   return <div style={styles}></div>;
@@ -14,7 +17,9 @@ function Card(props) {
 
 
 Card.defaultProps = {
-  cardColor: "blue"
+  cardColor: "blue",
+  width: 100,
+  height: 100
 }
 
 export default Card;

@@ -4,7 +4,7 @@ import Card from "./Card";
 function App() {
   return (
     <div>
-      <Card cardColor="red" />
+      <Card cardColor="red" height={200} width={200} />
       {/* With a props value */}
       <Card />
       {/* even if we dont give a prop value it will take a default value of the props  */}
