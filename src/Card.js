@@ -24,16 +24,24 @@ Card.defaultProps = {
 
 export default Card;
 
-/* class Card extends React.Component {
-  render() {
-      const styles = {
-          backgroundColor: this.props.cardColor,
-          height: this.props.height,
-          width: this.props.width
-      }
-      
-      return (
-          <div style={styles}></div>
-      )
-  }
-} */
+/* 
+class Card extends React.Component {
+    static defaultProps = {
+        cardColor: "blue",
+        height: 100,
+        width: 100
+    }
+    
+    render() {
+        const styles = {
+            backgroundColor: this.props.cardColor,
+            height: this.props.height,
+            width: this.props.width
+        }
+        
+        return (
+            <div style={styles}></div>
+        )
+    }
+}
+*/
